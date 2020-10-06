@@ -741,7 +741,7 @@ table{border-collapse:collapse;border-spacing:0}/*!
 	 z-index:100;
 	 display:none;
 	 float:left;
-	 min-width:50px; /* this was 160px */
+	 min-width:70px; /* this was 160px */
 	 padding:0;
 	 margin:2px 0 0;
 	 list-style:none;
@@ -827,10 +827,10 @@ table{border-collapse:collapse;border-spacing:0}/*!
  .book .book-summary{
 	 position:absolute;
 	 top:0;
-	 left:-50px; /* this was -300 px */
+	 left:-70px; /* this was -300 px */
 	 bottom:0;
 	 z-index:1;
-	 width:50px; /* this was 300 px */
+	 width:70px; /* this was 300 px */
 	 color:#fff; /* #364149 */
 	 background:#003e6bff; /* was #fafafa - makes the menu the same colour as the page background - change to #003e6bff */
 	 border-right:1px solid rgba(0,0,0,.07);
@@ -865,7 +865,7 @@ table{border-collapse:collapse;border-spacing:0}/*!
  .book .book-summary ul.summary li a:hover,
  .book .book-summary ul.summary li
  .active>a{color:#f9ab48ff;background:0 0;text-decoration:none} /* was #008cff - this change made the hover state yellow */
- .book .book-summary ul.summary li ul{padding-left:20px}@media (max-width:600px){.book .book-summary{width:50px;bottom:0;left:-100%}} /* a change from 60 px to 260 px here, helped on mobile  .... calc(100% - 260px)  */
+ .book .book-summary ul.summary li ul{padding-left:20px}@media (max-width:600px){.book .book-summary{width:70px;bottom:0;left:-100%}} /* a change from 60 px to 260 px here, helped on mobile  .... calc(100% - 260px)  */
  .book.with-summary 
  .book-summary{left:0}
  .book.without-animation 
@@ -933,7 +933,7 @@ table{border-collapse:collapse;border-spacing:0}/*!
 	 }
 	 @media (min-width:600px){
 		 .book.with-summary .book-body{
-			 left:50px  /* this was 300px - made a good change for white part of the menu on desktop, but not mobile */
+			 left:70px  /* this was 300px - made a good change for white part of the menu on desktop, but not mobile */
 			 }
 	 }
 	 @media (max-width:600px){
@@ -941,7 +941,7 @@ table{border-collapse:collapse;border-spacing:0}/*!
 			 overflow:hidden /* hidden */
 			 }
 		 .book.with-summary .book-body{
-			 left:50px
+			 left:70px
 			 }
 	 }
  .book.without-animation .book-body{

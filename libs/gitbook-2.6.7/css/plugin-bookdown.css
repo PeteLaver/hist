@@ -14,7 +14,7 @@ span.search-highlight {
 }
 @media (min-width: 600px) {
   .book.with-summary .book-header.fixed {
-    left: 50px; /*300px*/
+    left: 70px; /*300px*/
   }
 }
 @media (max-width: 1240px) {
@@ -23,7 +23,7 @@ span.search-highlight {
   }
   .book.with-summary .book-body {
     transform: none;
-    left: 50px; /* calc(100% - 60px) */
+    left: 70px; /* calc(100% - 60px) */
     min-width: 300px;
   } /* I added this */
   .book .book-body.fixed .body-inner {
@@ -32,12 +32,12 @@ span.search-highlight {
 }
 @media (max-width: 600px) {
   .book.with-summary .book-header.fixed {
-    left: 50px; /* calc(100% - 60px) */
+    left: 70px; /* calc(100% - 60px) */
     min-width: 300px;
   }
   .book.with-summary .book-body {
     transform: none;
-    left: 50px; /* calc(100% - 60px) */
+    left: 70px; /* calc(100% - 60px) */
     min-width: 300px;
   }
   .book .book-body.fixed {
