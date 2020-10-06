@@ -121,14 +121,14 @@
 <!-- Answer options go here -->
 <div class="radio">
 <p><label>
-<input type="radio" name="question07" id="opt20" value="a" onclick="check_answer()">
-3 - 8; 8 - 13; 13 - 18; 18 - 23
+<input type="radio" name="question07" id="opt20" value="A" onclick="check_answer()">
+A) 3 - 8; 8 - 13; 13 - 18; 18 - 23
 </label></p>
 </div>
 <div class="radio">
 <p><label>
-<input type="radio" name="question07" id="opt21" value="b" onclick="check_answer()">
-0 - 5; 5 - 10; 10 - 15; 15 - 20
+<input type="radio" name="question07" id="opt21" value="B" onclick="check_answer()">
+B) 0 - 5; 5 - 10; 10 - 15; 15 - 20
 </label></p>
 </div>
 <!-- Check answer button -->
@@ -150,7 +150,7 @@ function check_answer()
             var selectedAnswer = "Your selected answer was " + radioButtons[i].value;
             <!-- feedback for correct / incorrect response -->
             var feedback = "Hint: While both sets of bins are correct, do you think it would be easier to talk about a bin that goes from 5 to 10, or a bin that goes from 3 to 8?" 
-            if(radioButtons[i].value == "b") {
+            if(radioButtons[i].value == "B") {
               feedback = "Correct. While both sets of bins are correct, it can be easier to talk about data when we can talk about whole numbers and numbers rounded to the nearest 5, 10, or 100 etc."
             }
             document.getElementById("answerFeedback7").innerHTML = selectedAnswer + "<br>" + feedback;

@@ -122,14 +122,14 @@
 <!-- Answer options go here -->
 <div class="radio">
 <p><label>
-<input type="radio" name="question08" id="opt22" value="a" onclick="check_answer()">
-2; 4; 7; 2
+<input type="radio" name="question08" id="opt22" value="A" onclick="check_answer()">
+A) 2; 4; 7; 2
 </label></p>
 </div>
 <div class="radio">
 <p><label>
-<input type="radio" name="question08" id="opt23" value="b" onclick="check_answer()">
-3; 5; 5; 2
+<input type="radio" name="question08" id="opt23" value="B" onclick="check_answer()">
+B) 3; 5; 5; 2
 </label></p>
 </div>
 <!-- Check answer button -->
@@ -151,7 +151,7 @@ function check_answer()
             var selectedAnswer = "Your selected answer was " + radioButtons[i].value;
             <!-- feedback for correct / incorrect response -->
             var feedback = "Hint: Pay close attention to the symbols in the bin limit delineation. Which part of each bin limit (lower or upper) is inclusive?" 
-            if(radioButtons[i].value == "a") {
+            if(radioButtons[i].value == "A") {
               feedback = "Correct. For values like 5 and 10, we included those data in the bins that started with the 5 or 10 because the lower limits of the bins are inclusive."
             }
             document.getElementById("answerFeedback8").innerHTML = selectedAnswer + "<br>" + feedback;

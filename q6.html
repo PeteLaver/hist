@@ -120,38 +120,38 @@
 <!-- Answer options go here -->
 <div class="radio">
 <p><label>
-<input type="radio" name="question06" id="opt16" value="a" onclick="check_answer()">
-3 ≤ x &lt; 8; 8 ≤ x &lt; 13
+<input type="radio" name="question06" id="opt16" value="A" onclick="check_answer()">
+A) 3 ≤ x &lt; 8; 8 ≤ x &lt; 13
 </label></p>
 </div>
 <div class="radio">
 <p><label>
-<input type="radio" name="question06" id="opt17" value="b" onclick="check_answer()">
-3 ≤ x &lt; 8; 8 &lt; x ≤ 13
+<input type="radio" name="question06" id="opt17" value="B" onclick="check_answer()">
+B) 3 ≤ x &lt; 8; 8 &lt; x ≤ 13
 </label></p>
 </div>
 <div class="radio">
 <p><label>
-<input type="radio" name="question06" id="opt18" value="c" onclick="check_answer()">
-3 - 8; 9 - 14
+<input type="radio" name="question06" id="opt18" value="C" onclick="check_answer()">
+C) 3 - 8; 9 - 14
 </label></p>
 </div>
 <div class="radio">
 <p><label>
-<input type="radio" name="question06" id="opt19" value="d" onclick="check_answer()">
-3 - 8; 8 - 13
+<input type="radio" name="question06" id="opt19" value="D" onclick="check_answer()">
+D) 3 - 8; 8 - 13
 </label></p>
 </div>
 <div class="radio">
 <p><label>
-<input type="radio" name="question06" id="opt20" value="e" onclick="check_answer()">
-a and d
+<input type="radio" name="question06" id="opt20" value="E" onclick="check_answer()">
+E) A and D
 </label></p>
 </div>
 <div class="radio">
 <p><label>
-<input type="radio" name="question06" id="opt21" value="f" onclick="check_answer()">
-b and c
+<input type="radio" name="question06" id="opt21" value="F" onclick="check_answer()">
+F) B and C
 </label></p>
 </div>
 <!-- Check answer button -->
@@ -173,7 +173,7 @@ function check_answer()
             var selectedAnswer = "Your selected answer was " + radioButtons[i].value;
             <!-- feedback for correct / incorrect response -->
             var feedback = "Hint: Two of the sets are correct. Make sure that there are no gaps between the bins (e.g. imagine you had a value of 8.5 that had to be assigned to a bin) and make sure that the rule about which bin limit (upper or lower) is inclusive, is applied consistently. " 
-            if(radioButtons[i].value == "e") {
+            if(radioButtons[i].value == "E") {
               feedback = "Correct. Both sets (a and d) are correct. For set d, we just need to remember to apply our rule about which side of the bin limit (upper or lower) is inclusive."
             }
             document.getElementById("answerFeedback6").innerHTML = selectedAnswer + "<br>" + feedback;
