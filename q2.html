@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Q2 | How to make a histogram</title>
   <meta name="description" content="Q2 | How to make a histogram" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Q2 | How to make a histogram" />
   <meta property="og:type" content="book" />
@@ -50,6 +50,8 @@
 
 
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
@@ -116,7 +118,7 @@
 <h1>Q2</h1>
 <div id="data-range" class="section level3 unnumbered">
 <h3>Data range</h3>
-<p>Calculate the range (maximum minus minimum) for these data: 11, 7, 14, 19, 10, 12, 3, 14, 10, 5, 19, 4, 13, 8, 7</p>
+<p>Calculate the range for these data: 11, 7, 14, 19, 10, 12, 3, 14, 10, 5, 19, 4, 13, 8, 7</p>
 <!-- Answer options go here -->
 <div class="radio">
 <p><label>
@@ -162,7 +164,7 @@ function check_answer()
             <!-- feedback for correct / incorrect response -->
             var feedback = "Hint: Try looking through the numbers to find the highest value (maximum) and lowest value (minimum). Then subtract the minimum from the maximum." 
             if(radioButtons[i].value == "16") {
-              feedback = "Correct. We got to the answer by subtracting the minimum, 3, from the maximum, 19."
+              feedback = "Correct. We got to the answer by subtracting the minimum, 3, from the maximum, 19. This is what our calculation looks like: 19 - 3 = 16."
             }
             document.getElementById("answerFeedback2").innerHTML = selectedAnswer + "<br>" + feedback;
             return true;

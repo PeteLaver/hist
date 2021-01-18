@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Q3 | How to make a histogram</title>
   <meta name="description" content="Q3 | How to make a histogram" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Q3 | How to make a histogram" />
   <meta property="og:type" content="book" />
@@ -50,6 +50,8 @@
 
 
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
@@ -116,7 +118,7 @@
 <h1>Q3</h1>
 <div id="bin-width" class="section level3 unnumbered">
 <h3>Bin width</h3>
-<p>We decide to use four bins for this same set of data: 11, 7, 14, 19, 10, 12, 3, 14, 10, 5, 19, 4, 13, 8, 7. Given the data range that we’ve
+<p>We decide, subjectively, to use four bins for this same set of data: 11, 7, 14, 19, 10, 12, 3, 14, 10, 5, 19, 4, 13, 8, 7. Given the data range that we’ve
 just calculated (16), what bin width would we use?</p>
 <!-- Answer options go here -->
 <div class="radio">
@@ -157,7 +159,7 @@ function check_answer()
             <!-- feedback for correct / incorrect response -->
             var feedback = "This could work, but we might be able to find a better bin width. Hint: Try dividing the data range (maximum minus minimum) by the number of bins. Remember that if we get a whole number for our answer, we might want to round up to the next whole number." 
             if(radioButtons[i].value == "5") {
-              feedback = "This might be a good choice of bin width for these data. We got to the answer by subtracting the minimum, 3, from the maximum, 19. This gave us a range of 16. We divided the range by the number of bins, 4. This gave us the value 4. Because 4 is a whole number, we rounded up to 5."
+              feedback = "This is probably the better choice of bin width for these data. We got to the answer by subtracting the minimum, 3, from the maximum, 19. This gave us a range of 16 (19 - 3 = 16). We divided the range by the number of bins, 4. This gave us the value 4 for the bin width (16 / 4 = 4). Because 4 is a whole number, we rounded up to 5. If we had used a bin width of 4 and started at the minimum value (3), we would have needed a fifth bin to hold our maximum value (19). You can confirm this by writing out the bins - remember to include the &leq; and < symbols. If we had used a bin width of 6, and started at the minimum value (3), we would only use three bins to cover all the data. We could have started at 0 instead, which would also be a reasonable choice to make. A bin width of 5 works if you start at 3 or at 0. If you start at 0, a bin width of 5 has the added benefit of giving you bin limits that are easier to read (0 - 5; 5 - 10; 10 - 15; 15 - 20)."
             }
             document.getElementById("answerFeedback3").innerHTML = selectedAnswer + "<br>" + feedback;
             return true;

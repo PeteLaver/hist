@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Q4 | How to make a histogram</title>
   <meta name="description" content="Q4 | How to make a histogram" />
-  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Q4 | How to make a histogram" />
   <meta property="og:type" content="book" />
@@ -50,6 +50,8 @@
 
 
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
@@ -116,7 +118,7 @@
 <h1>Q4</h1>
 <div id="bin-limits" class="section level3 unnumbered">
 <h3>Bin limits</h3>
-<p>Now that we have the number of bins (4) and the bin width (5), we need to construct our bin limits. We can start at our minimum value (3). If we do start there, complete this first bin’s delineation: 3 <span class="math inline">\(\leq\)</span> <span class="math inline">\(x\)</span> <span class="math inline">\(&lt;\)</span> ___.</p>
+<p>Now we have the number of bins (4, chosen subjectively) and the bin width (5, calculated in the previous step). Next, we need to construct our bin limits. We can start at our minimum value (3). If we do start there, complete this first bin’s delineation: 3 <span class="math inline">\(\leq\)</span> <span class="math inline">\(x\)</span> <span class="math inline">\(&lt;\)</span> ___.</p>
 <!-- Answer options go here -->
 <div class="radio">
 <p><label>
@@ -156,7 +158,7 @@ function check_answer()
             <!-- feedback for correct / incorrect response -->
             var feedback = "Hint: Think about how we might combine the starting (lower) value for the bin and the bin width. Perhaps we could add the bin width to the starting value." 
             if(radioButtons[i].value == "8") {
-              feedback = "Correct. To get to this value, we added our bin width to the lower value of the bin."
+              feedback = "Correct. To get to this value, we added our bin width to the lower value of the bin (5 + 3 = 8)."
             }
             document.getElementById("answerFeedback4").innerHTML = selectedAnswer + "<br>" + feedback;
             return true;
