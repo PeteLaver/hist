@@ -153,9 +153,9 @@ function check_answer()
         {
             var selectedAnswer = "Your selected answer was " + radioButtons[i].value;
             <!-- feedback for correct / incorrect response -->
-            var feedback = "Hint: Pay close attention to the symbols in the bin limit delineation. Which part of each bin limit (lower or upper) is inclusive?" 
+            var feedback = "<p style='color:orange;'>Hint: Pay close attention to the symbols in the bin limit delineation. Which part of each bin limit (lower or upper) is inclusive?</p>" 
             if(radioButtons[i].value == "A") {
-              feedback = "Correct. For values like 5 and 10, we included those data in the bins that started with the 5 or 10 because the lower limits of the bins are inclusive."
+              feedback = "<p style='color:lightgreen;'>Correct. For values like 5 and 10, we included those data in the bins that started with the 5 or 10 because the lower limits of the bins are inclusive.</p>"
             }
             document.getElementById("answerFeedback8").innerHTML = selectedAnswer + "<br>" + feedback;
             return true;

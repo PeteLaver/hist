@@ -156,9 +156,9 @@ function check_answer()
         {
             var selectedAnswer = "Your selected answer was " + radioButtons[i].value;
             <!-- feedback for correct / incorrect response -->
-            var feedback = "Hint: Think about how we might combine the starting (lower) value for the bin and the bin width. Perhaps we could add the bin width to the starting value." 
+            var feedback = "<p style='color:orange;'>Hint: Think about how we might combine the starting (lower) value for the bin and the bin width. Perhaps we could add the bin width to the starting value.</p>" 
             if(radioButtons[i].value == "8") {
-              feedback = "Correct. To get to this value, we added our bin width to the lower value of the bin (5 + 3 = 8)."
+              feedback = "<p style='color:lightgreen;'>Correct. To get to this value, we added our bin width to the lower value of the bin (5 + 3 = 8).</p>"
             }
             document.getElementById("answerFeedback4").innerHTML = selectedAnswer + "<br>" + feedback;
             return true;

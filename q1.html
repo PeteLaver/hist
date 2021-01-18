@@ -151,9 +151,9 @@ function check_answer()
         {
             var selectedAnswer = "Your selected answer was " + radioButtons[i].value;
             <!-- feedback for correct / incorrect response -->
-            var feedback = "Hint: how quickly can we go through the numbers in the dataset to find the minimum or maximum or get a sense for where the middle of the dataset lies? How about when we look at the histogram?" 
+            var feedback = "<p style='color:orange;'>Hint: how quickly can we go through the numbers in the dataset to find the minimum or maximum or get a sense for where the middle of the dataset lies? How about when we look at the histogram?</p>" 
             if(radioButtons[i].value == "B") {
-              feedback = "Correct. A histogram can quickly and easily communicate the distribution of a set of data."
+              feedback = "<p style='color:lightgreen;'>Correct. A histogram can quickly and easily communicate the distribution of a set of data.</p>"
             }
             document.getElementById("answerFeedback").innerHTML = selectedAnswer + "<br>" + feedback;
             return true;

@@ -156,9 +156,9 @@ function check_answer()
         {
             var selectedAnswer = "Your selected answer was " + radioButtons[i].value;
             <!-- feedback for correct / incorrect response -->
-            var feedback = "Hint: look at the first bin we delineated. Where would the second bin start so that we don't leave any gaps where a data point might not get counted. Pay close attention to the symbols we use e.g. less than or equal to. " 
+            var feedback = "<p style='color:orange;'>Hint: look at the first bin we delineated. Where would the second bin start so that we don't leave any gaps where a data point might not get counted. Pay close attention to the symbols we use e.g. less than or equal to.</p> " 
             if(radioButtons[i].value == "8") {
-              feedback = "Correct. To get to this value, we used the upper limit of our previous bin."
+              feedback = "<p style='color:lightgreen;'>Correct. To get to this value, we used the upper limit of our previous bin.</p>"
             }
             document.getElementById("answerFeedback5").innerHTML = selectedAnswer + "<br>" + feedback;
             return true;

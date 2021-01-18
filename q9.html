@@ -197,9 +197,9 @@ function check_answer()
         {
             var selectedAnswer = "Your selected answer was " + radioButtons[i].value;
             <!-- feedback for correct / incorrect response -->
-            var feedback = "Hint: Look at the bars in both graphs. Are there gaps between the bars in one of the graphs? If so, this might suggest that you are looking at a bar chart rather than a histogram." 
+            var feedback = "<p style='color:orange;'>Hint: Look at the bars in both graphs. Are there gaps between the bars in one of the graphs? If so, this might suggest that you are looking at a bar chart rather than a histogram.</p>" 
             if(radioButtons[i].value == "A") {
-              feedback = "Correct. A histogram has no spaces or gaps between adjacent bars."
+              feedback = "<p style='color:lightgreen;'>Correct. A histogram has no spaces or gaps between adjacent bars.</p>"
             }
             document.getElementById("answerFeedback9").innerHTML = selectedAnswer + "<br>" + feedback;
             return true;

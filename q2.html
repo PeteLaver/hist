@@ -162,9 +162,9 @@ function check_answer()
         {
             var selectedAnswer = "Your selected answer was " + radioButtons[i].value;
             <!-- feedback for correct / incorrect response -->
-            var feedback = "Hint: Try looking through the numbers to find the highest value (maximum) and lowest value (minimum). Then subtract the minimum from the maximum." 
+            var feedback = "<p style='color:orange;'>Hint: Try looking through the numbers to find the highest value (maximum) and lowest value (minimum). Then subtract the minimum from the maximum.</p>" 
             if(radioButtons[i].value == "16") {
-              feedback = "Correct. We got to the answer by subtracting the minimum, 3, from the maximum, 19. This is what our calculation looks like: 19 - 3 = 16."
+              feedback = "<p style='color:lightgreen;'>Correct. We got to the answer by subtracting the minimum, 3, from the maximum, 19. This is what our calculation looks like: 19 - 3 = 16.</p>"
             }
             document.getElementById("answerFeedback2").innerHTML = selectedAnswer + "<br>" + feedback;
             return true;

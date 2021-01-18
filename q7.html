@@ -152,9 +152,9 @@ function check_answer()
         {
             var selectedAnswer = "Your selected answer was " + radioButtons[i].value;
             <!-- feedback for correct / incorrect response -->
-            var feedback = "Hint: While both sets of bins are correct, do you think it would be easier to talk about a bin that goes from 5 to 10, or a bin that goes from 3 to 8?" 
+            var feedback = "<p style='color:orange;'>Hint: While both sets of bins are correct, do you think it would be easier to talk about a bin that goes from 5 to 10, or a bin that goes from 3 to 8?</p>" 
             if(radioButtons[i].value == "B") {
-              feedback = "Correct. While both sets of bins are correct, it can be easier to talk about data when we can talk about whole numbers and numbers rounded to the nearest 5, 10, or 100 etc."
+              feedback = "<p style='color:lightgreen;'>Correct. While both sets of bins are correct, it can be easier to talk about data when we can talk about whole numbers and numbers rounded to the nearest 5, 10, or 100 etc.</p>"
             }
             document.getElementById("answerFeedback7").innerHTML = selectedAnswer + "<br>" + feedback;
             return true;
